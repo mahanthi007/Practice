@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country</title>
+</head>
+<body>
+    <select id="countries">
+        <option value="India">India</option>
+        <option value="United States of America">United States of America</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <button onclick="findContinent()">Find Continent</button>
+
+    <script>
+        function findContinent(){
+            var country = document.getElementById("countries").value
+console.log(country);
+            switch(country){
+                case "India":
+                    alert("Asia")
+                    break;
+                case "China":
+                    alert("Asia")
+                    break;
+                case "Nepal":
+                    alert("Asia")
+                    break;
+                case "Singapore":
+                    alert("Asia")
+                    break;
+                case "South Africa":
+                    alert("Africa")
+                    break;
+                case "Nigeria":
+                    alert("Africa")
+                    break;
+                case "Argentina":
+                    alert("South America")
+                    break;
+                case "Brazil":
+                    alert("South America")
+                    break;
+                case "Mexico":
+                    alert("USA")
+                    break;
+                case "United States of America":
+                    alert("USA")
+                    break;
+                case "Canada":
+                    alert("USA")
+                    break;
+                case "France":
+                    alert("Europe")
+                    break;
+                case "Germany":
+                    alert("Europe")
+                    break;
+                case "Sweden":
+                    alert("Europe")
+                    break;
+                case "Australia":
+                    alert("Australia")
+                    break;
+                }
+        }
+    </script>
+</body>
+</html>

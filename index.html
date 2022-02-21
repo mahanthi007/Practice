@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sprint3</title>
+        <style type="text/css">
+        h1{
+            text-align: center;
+            font-size: 60px;
+            color: #041d5c;
+        }
+       
+        body>div{
+            width: 100%;
+            height: 98vh;
+        }
+        #middle{
+            width: 100%;
+            height: 50vh;
+            margin-top: 100px;
+        }
+        *{
+            font-family: sans-serif;
+        }
+        #middle>div{
+            width: 25%;
+            height: 100%;
+            margin:0px 60px 0px 60px;
+            float: left;
+        }
+        #middle>div>div h4{
+            padding: 0px 0px 0px 20px;
+        }
+        #bottom{
+            width: 100%;
+            height: 30vh;
+            background-color:#041d5c;
+        }
+        #bottom div:nth-child(1){
+            float: left;
+            width: 25%;
+            margin: 40px 0px 0px 50px;
+            color: white;
+        }
+        #bottom div:nth-child(1) h1{
+            text-align: left;
+        }
+        #bottom div:nth-child(1) h1{
+            text-align: left;
+            font-size: 30px;
+            color: white;
+        }
+        #bottom div:nth-child(2){
+            float: right;
+            width: 50%;
+            height: 30vh;
+            margin: 70px 50px 0px 70px;
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            background-color: #041d5c;
+            border: 2px solid #596994;
+            margin: 0px 10px 20px 10px;
+            border-radius: 5px;
+        }
+        ::placeholder{
+            color: white;
+            padding: 0px 0px 0px 10px;
+        }
+        #service{
+            width: 450px;
+            border-radius: 5px;
+        }
+        button{
+            height: 45px;
+            width: 168px;
+            border-radius: 5px;            
+            background-color: #ff425c;
+            border: #ff425c;
+            color: white;
+        }
+        img~p{
+            color: red;
+            font-size: 13px;
+            padding: 0px 0px 0px 20px;
+
+        }
+        h4~p{
+            font-size: 11px;
+            color: gray;
+            padding: 0px 0px 0px 20px;
+
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div><h1>Our Recent News</h1></div>
+            <div id="middle">
+                <div>
+                    <div><img src="https://via.placeholder.com/370x250" id="Buisness" alt="">
+                    <p>Business planing</p></div>
+                    <div><h4>Amazing Places To Visit In <br>Summer</h4><p>Nov 30,2020</p></div>
+                </div>
+                <div>
+                    <div><img src="https://via.placeholder.com/370x250" id="Buisness" alt="">
+                    <p>Audit</p></div>
+                    <div><h4>Amazing Places To Visit In <br>Summer</h4><p>Nov 30,2020</p></div>
+                </div>
+                <div>
+                    <div><img src="https://via.placeholder.com/370x250" id="Buisness" alt="">
+                    <p>Business planing</p></div>
+                    <div><h4>Amazing Places To Visit In <br>Summer</h4><p>Nov 30,2020</p></div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div><h1>Request for call<br>Back</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type.</p></div>
+               <div>
+                   <form action="">
+                    <label for="nam"></label>
+                    <input type="text" id="nam" placeholder="Name">
+                    <label for="phone"></label>
+                    <input type="number" id="phone" placeholder="Phone">
+                    <label for="service"></label>
+                    <input list="service1" id="service" name="service-choice" placeholder="Service"/>
+                    <datalist id="service1">
+                        <option value="Business">
+                            <option value="Audit">
+                                <option value="Planing">
+                    </datalist>
+                    <button>Send</button>
+                   </form>
+                   
+               </div>
+            </div>
+        </div>
+    </body>
+</html>

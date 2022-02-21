@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <style>
+        body{
+            background-color: rgb(248, 187, 134);
+            font-family: sans-serif;
+        }
+        .float1{
+            float: left;
+            margin-left: 500px;
+        }
+        .floatR{
+            float: right;
+            margin-right: 500px;
+        }
+        .clear{
+            clear: both;
+        }
+        #minScore{
+            background-color: red;
+        }
+        #maxScore{
+            background-color: green;
+        }
+        .scoreBox{
+            height: 70px;
+            width: 160px;
+            border: 1px solid black;
+            font-size: 40px;
+            line-height: 70px;
+        }
+        div{
+            text-align: center;
+        }
+        #score{
+            margin: auto;
+            width: 350px;
+            background-color: #b3b3b3;
+        }
+        #keyboard{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 20px;
+            width: 340px;
+            margin: 20px auto;
+            font-size: 40px;
+        }
+        #keyboard>div{
+            border: 1px solid black;
+            font: 30px;
+            line-height: 100px;
+        }
+        .green{
+            background-color: #668100;
+        }
+        .orange{
+            background-color: #ff6600;
+        }
+        .purple{
+            background-color: purple;
+        }
+        #box0{
+            grid-area: 4/2;
+        }
+        button{
+            width: 350px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <div class="float1">
+                <div id="minScore" class="scoreBox">42</div>
+                <h1>MIN</h1>
+            </div>
+            <div class="floatR">
+                <div id="maxScore" class="scoreBox">2019</div>
+                <h1>MAX</h1>
+            </div>
+        </div>
+        <div id="mid" class="clear">
+            <h1>SCORE</h1>
+            <div id="score" class="scoreBox">#</div>
+            <div id="keyboard">
+                <div id="box1" class="green" onclick="press('1')">1</div>
+                <div id="box2" class="orange" onclick="press('2')">2</div>
+                <div id="box3" class="green" onclick="press('3')">3</div>
+                <div id="box4" class="orange" onclick="press('4')">4</div>
+                <div id="box5" class="orange" onclick="press('5')">5</div>
+                <div id="box6" class="orange" onclick="press('6')">6</div>
+                <div id="box7" class="green" onclick="press('7')">7</div>
+                <div id="box8" class="orange" onclick="press('8')">8</div>
+                <div id="box9" class="green" onclick="press('9')">9</div>
+                <div id="box0" class="purple" onclick="press('0')">0</div>
+            </div>
+        </div>
+        <div id="bottom">
+            <button id="enter">ENTER</button>
+        </div>
+    </div>
+    <script>
+        var min = 42;
+        var max = 2019;
+        var currentScore = "";
+
+        function press(num){
+            currentScore += num;
+            console.log(currentScore);
+            document.getElementById("score").textContent = currentScore;
+        }
+
+        function setScores(){
+            if(currentScore>max){
+                max = currentScore;
+                document.getElementById("maxScore").textContent = max;
+            }else if(currentScore<min){
+                min = currentScore;
+                document.getElementById("minScore").textContent = min;
+            }
+            currentScore = "";
+            document.getElementById("score").textContent = "#";
+            }
+
+            var enter = document.getElementById("enter");
+            enter.addEventListener("click", setScores)
+
+    </script>
+</body>
+</html>

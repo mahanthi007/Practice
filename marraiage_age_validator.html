@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+    <select id = "gender">
+        <option value = "M"> M</option>    
+        <option value = "F">F</option>    
+    </select>
+
+    <input type="text" id="year"/>
+
+    <button onclick="checkAge()">Check Age</button>
+
+    <script>
+        function checkAge() {
+            var gender= document.getElementById("gender").value
+            var year = Number(document.getElementById("year").value);
+            var age = 2021 - year;
+            if((gender=="M" && age>=20)||(gender=="F" && age>=18)){
+                alert("Get married");
+            }else{
+                alert("Not");
+            }
+        }
+        
+    </script>
+</body>
+</html>

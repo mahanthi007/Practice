@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hindu</title>
+    <style type="text/css">
+    body{
+        background-color: #f1f1f1;
+    }
+   
+    h4,p{
+        padding-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h4{
+        color:  #133b5a;
+        font-family: sans-serif;
+    }
+    .l1>div{
+        padding-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #main{
+        display: grid;
+        gap:25px;
+        grid-template-areas: 
+        "l1 r1"
+        "l1 r2"
+        "l1 r3"
+        "l2 r4";
+    }
+    .l1>img{
+        width: 100%;
+    }
+    
+    .l1{
+        background-color: #133b5a;
+        color: white;
+        grid-area: l1;
+    }
+    .l2{
+        background-color: white;
+        grid-area: l2;
+        display: flex;
+    }
+    .r1{
+        background-color: white;
+        grid-area: r1;
+        display: flex;
+    }
+    .r2{
+        background-color: white;
+        grid-area: r2;
+        display: flex;
+    }
+    .r3{
+        background-color: white;
+        grid-area: r3;
+        display: flex;
+    }
+    .r4{
+        background-color: white;
+        grid-area: r4;
+        display: flex;
+    }
+    /* .float{
+        display: flex;
+        background-color: blue;
+    } */
+    @media only screen and(max-width: 720px) {
+        #main{
+            grid-template-areas: 
+            "l1 l1"
+            "r1 r2"
+            "r2 r4"
+            "l2";
+        }
+    }
+    @media only screen and(max-width: 600px) {
+        #main{
+            grid-template-areas: 
+            "l1"
+            "l2"
+            "r1"
+            "r2"
+            "r3"
+            "r4";
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="l1">
+            <img src="https://via.placeholder.com/700x305" alt="">
+            <div>
+                <h1>Ahmedabad jointly rally with Trump will <br>be historic, says modi</h1><h3>KALLOL BHATTACHERJEE</h3><h3>SUHASINI HAIDIR</h3><p>U.S. Prisedent to visit Sabarmathi Ashram ahead of 'Namaste Trump event</p>
+            </div>
+            </div>
+        <div class="l2" class="float"><img src="https://via.placeholder.com/150" alt="">
+            <div><h4>THE HUDDLE</h4><p>The Huddle  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+        </div>
+        <div class="r1" class="float"><img src="https://via.placeholder.com/150" alt="">
+            <div><h4>NATIONAL</h4><p>Over 10 lakh  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+        </div>
+        <div class="r2" class="float"><img src="https://via.placeholder.com/150" alt="">
+            <div><h4>NATIONAL</h4><p>Over 10 lakh  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+        </div>
+        <div class="r3" class="float"><img src="https://via.placeholder.com/150" alt="">
+            <div><h4>THE HUDDLE</h4><p>The Huddle  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+        </div>
+        <div class="r4" class="float"><img src="https://via.placeholder.com/150" alt="">
+            <div><h4>NATIONAL</h4><p>Over 10 lakh  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+        </div>
+    </div>
+</body>
+</html>

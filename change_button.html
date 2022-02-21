@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>color</title>
+        <style>
+            button{
+                width: 500px;
+                height: 50px;
+                font-size: large;
+            }
+        </style>
+    </head>
+<body>
+  <h1>Change the buttons text color random value</h1>
+  <button id="click" onclick="randomColor()"><b>Click here to change my color</b></button>
+  <button id="click2" onclick="colorChange()">Click me to change my color to an array value!</button>
+  <script>
+      function randomColor(e){
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+          document.getElementById('click').style.color = "#" + randomColor
+      }
+      function colorChange(e){
+          var array = ["red", 'blue','green','yellow']
+          var color = document.map(function(el){
+            document.getElementById('click2').style.color = el
+          })
+          document.getElementById('click2').style.color = el
+      }
+  </script>
+</body>
+</html>
